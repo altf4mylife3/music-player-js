@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <audio src="https://files.catbox.moe/5fmd3t.mp3" id="music"></audio>
+        <div class="album-container">
+            <img src="" alt="Album Icon" id="album-display">
+        </div>
+        <div class="details">
+            <h2 id="title">
+                <img src="images/song.png" class="img"> <span id="titleDisplay"></span>
+            </h2>
+            <h3 id="artist">
+                <img src="images/artist.png" class="img"> <span id="artistDisplay"></span>
+            </h3>
+        </div>
+        <div class="controls">
+            <button id="repeat">
+                <img src="images/repeat.png">
+            </button>
+            <button id="previous">
+                <img src="images/back.png">
+            </button>
+            <button id="playpause"></button>
+            <button id="next">
+                <img src="images/frwd.png">
+            </button>
+
+            <div class="volume">
+                <img src="images/volumeup.png" id="vollabel">
+                <input type="range" id="volume" name="volume" min="0" max="100">
+            </div>
+        </div>
+        <div class="tracklist">
+            <ul id="tracklist"></ul>
+        </div>
+    </div>
+</body>
+</html>
